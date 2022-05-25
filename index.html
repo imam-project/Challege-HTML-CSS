@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--------------------Hero Section--------------------------->
+
+    <div class="hero">
+      <nav>
+        <h2 class="logo"><span>Port</span>folio</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">My Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h4>Hello, my name is</h4>
+        <h1>Bagas <span>Imam</span></h1>
+        <h3>I'm a Videographer</h3>
+      </div>
+    </div>
+
+    <!----------------------about section------------------------->
+
+    <section class="about">
+      <div class="main">
+        <img src="./img/foto.jpeg" alt="" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <h5>Video<span>grapher</span></h5>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo eaque sapiente obcaecati culpa ratione est quod esse velit cum, harum odit nesciunt vel ab delectus, tempore molestiae soluta magni blanditiis fugiat alias! Iure
+            quidem atque officiis minus veniam, laborum doloremque, assumenda dolores eum, natus tempore ad delectus illum cupiditate sequi.
+          </p>
+          <button type="button">Let's Talk</button>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------My work section------------------------>
+
+    <div class="work">
+      <h2>My Work</h2>
+      <div class="work-area">
+        <div class="video1"><video src="./video/video1.mp4" loop="loop" onmouseover="this.play();" onmouseout="this.pause();"></video></div>
+        <div class="video2"><video src="./video/video2.mp4" loop="loop" onmouseover="this.play();" onmouseout="this.pause();"></video></div>
+        <div class="video3"><video src="./video/video3.mp4" loop="loop" onmouseover="this.play();" onmouseout="this.pause();"></video></div>
+      </div>
+      <div class="work-text">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+          aut illo tempore incidunt expedita ratione, blanditiis iure, alias architecto itaque numquam quisquam doloribus, autem odio consequatur aperiam. Aliquam, reprehenderit magni.
+        </p>
+        <a class="button-dua" href="#">More</a>
+      </div>
+    </div>
+
+    <!-------------------------contact section------------------------------------>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <a class="button-tiga" href="#">Contact Me</a>
+    </div>
+    <!------------------footer--------------------------->
+    <footer>
+      <p>Bagas Imam</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo in nulla aliquid mollitia. Sequi in ipsum illo asperiores quaerat doloribus.</p>
+      <div class="sosmed">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="end">CopyRight By Bagas Imam</p>
+    </footer>
+  </body>
+</html>
