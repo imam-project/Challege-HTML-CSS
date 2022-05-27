@@ -19,11 +19,11 @@
   <body>
     <!--------------------Hero Section--------------------------->
 
-    <div class="hero">
+    <div class="hero" id="home">
       <nav>
         <h2 class="logo"><span>Port</span>folio</h2>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#mywork">My Work</a></li>
           <li><a href="#contact">Contact Me</a></li>
@@ -99,5 +99,31 @@
       </div>
       <p class="end">CopyRight By Bagas Imam</p>
     </footer>
+
+     <!---------------------navbar scroll effect-------------------------------------->
+     <script>
+      const body = document.body
+      let lastScroll = 0
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset
+
+        if (currentScroll <= 0) {
+          body.classList.remove("scroll-up")
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+          body.classList.remove("scroll-up")
+          body.classList.add("scroll-down")
+        }
+
+        if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+          body.classList.remove("scroll-down")
+          body.classList.add("scroll-up")
+        }
+
+        lastScroll = currentScroll
+      })
+    </script>
   </body>
 </html>

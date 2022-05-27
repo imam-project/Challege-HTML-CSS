@@ -16,13 +16,19 @@ html {
   scroll-behavior: smooth;
 }
 nav {
+  background: #191919;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 50px;
   padding-left: 8%;
   padding-right: 8%;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
 }
 
 .logo {
@@ -302,4 +308,13 @@ footer p:nth-child(2) {
   color: #f9004d;
   bottom: 35px;
   font-size: 15px;
+}
+/*Scroll Stuff*/
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px grey);
 }
